@@ -34,17 +34,18 @@ export default function Education() {
     }
   ];
 
+  const baseUrl = import.meta.env.BASE_URL;
   const photos = [
-    "/photo1.jpeg",
-    "/photo2.jpeg",
-    "/photo3.jpeg",
-    "/photo4.jpeg",
-    "/photo5.jpeg",
-    "/photo6.jpeg",
-    "/photo7.jpeg",
-    "/photo8.jpeg",
-    "/photo9.jpeg",
-    "/photo10.jpeg",
+    `${baseUrl}photo1.jpeg`,
+    `${baseUrl}photo2.jpeg`,
+    `${baseUrl}photo3.jpeg`,
+    `${baseUrl}photo4.jpeg`,
+    `${baseUrl}photo5.jpeg`,
+    `${baseUrl}photo6.jpeg`,
+    `${baseUrl}photo7.jpeg`,
+    `${baseUrl}photo8.jpeg`,
+    `${baseUrl}photo9.jpeg`,
+    `${baseUrl}photo10.jpeg`,
   ];
 
   /* COLORS */

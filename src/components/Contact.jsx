@@ -2,13 +2,14 @@ import { useContext, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ThemeContext } from "../context/ThemeContext";
 
+const baseUrl = import.meta.env.BASE_URL;
 const images = [
-  { src: "/photo1.jpeg", top: "8%", left: "6%", rotate: -12 },
-  { src: "/photo7.jpeg", top: "18%", left: "72%", rotate: 10 },
-  { src: "/photo3.jpeg", top: "58%", left: "8%", rotate: 8 },
-  { src: "/photo10.jpeg", top: "62%", left: "70%", rotate: -10 },
-  { src: "/photo9.jpeg", top: "40%", left: "88%", rotate: 6 },
-  { src: "/photo2.jpeg", top: "78%", left: "40%", rotate: -8 },
+  { src: `${baseUrl}photo1.jpeg`, top: "8%", left: "6%", rotate: -12 },
+  { src: `${baseUrl}photo7.jpeg`, top: "18%", left: "72%", rotate: 10 },
+  { src: `${baseUrl}photo3.jpeg`, top: "58%", left: "8%", rotate: 8 },
+  { src: `${baseUrl}photo10.jpeg`, top: "62%", left: "70%", rotate: -10 },
+  { src: `${baseUrl}photo9.jpeg`, top: "40%", left: "88%", rotate: 6 },
+  { src: `${baseUrl}photo2.jpeg`, top: "78%", left: "40%", rotate: -8 },
 ];
 
 export default function Contact() {
@@ -164,7 +165,7 @@ export default function Contact() {
           />
           <ConnectBtn
             label="To Know Me More (Resume)"
-            href="/Palak_Goyal_Resume.pdf"
+            href={`${import.meta.env.BASE_URL}Palak_Goyal_Resume.pdf`}
             isLight={isLight}
           />
         </div>

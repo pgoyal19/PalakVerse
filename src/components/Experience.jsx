@@ -48,24 +48,25 @@ const timeline = [
   },
 ];
 
+const baseUrl = import.meta.env.BASE_URL;
 const certificates = [
   {
     title: "DRDO Training Certificate",
     issuer: "SSPL, DRDO",
     period: "2025",
-    image: "/drdo-certificate.jpeg",
+    image: `${baseUrl}drdo-certificate.jpeg`,
   },
   {
     title: "Cloud Computing Fundamentals",
     issuer: "NIC",
     period: "2024",
-    image: "/ic.jpeg",
+    image: `${baseUrl}ic.jpeg`,
   },
   {
     title: "Machine Learning Foundations",
     issuer: "QuickWay",
     period: "2024",
-    image: "/QuickWay.jpeg",
+    image: `${baseUrl}QuickWay.jpeg`,
   },
 ];
 

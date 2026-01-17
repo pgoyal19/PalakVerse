@@ -4,11 +4,12 @@ import ScrollScene from "./ScrollScene";
 import TypewriterText from "./TypewriterText";
 import { ThemeContext } from "../context/ThemeContext";
 
+const baseUrl = import.meta.env.BASE_URL;
 const heroPhotos = [
-  "/photo1.jpeg",
-  "/photo2.jpeg",
-  "/photo3.jpeg",
-  "/photo4.jpeg"
+  `${baseUrl}photo1.jpeg`,
+  `${baseUrl}photo2.jpeg`,
+  `${baseUrl}photo3.jpeg`,
+  `${baseUrl}photo4.jpeg`
 ];
 
 const randomFloat = () => ({
