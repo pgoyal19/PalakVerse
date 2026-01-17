@@ -7,12 +7,23 @@ import react from '@vitejs/plugin-react'
 const base = process.env.VITE_BASE_PATH || '/';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react({
+      jsxRuntime: 'automatic',
+    })
+  ],
   base: base,
   resolve: {
     dedupe: ['react', 'react-dom'],
   },
   optimizeDeps: {
-    include: ['react-icons'],
+    include: ['react', 'react-dom'],
+  },
+  build: {
+    target: 'esnext',
+    commonjsOptions: {
+      include: [/node_modules/],
+      transformMixedEsModules: true,
+    },
   },
 })
